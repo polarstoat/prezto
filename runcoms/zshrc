@@ -11,3 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+alias tmsu="sudo sysctl debug.lowpri_throttle_enabled=0"
+alias tmsd="sudo sysctl debug.lowpri_throttle_enabled=1"
