@@ -20,3 +20,4 @@ SPACESHIP_EXIT_CODE_SHOW=true
 source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/.iterm2_shell_integration.zsh"
 
 alias uberspike="ssh garkbit@auriga.uberspace.de."
+alias ubermetric="ssh owntrout@bellatrix.uberspace.de."
