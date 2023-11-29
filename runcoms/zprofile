@@ -18,10 +18,10 @@ fi
 #
 
 if [[ -z "$EDITOR" ]]; then
-  export EDITOR='subl'
+  export EDITOR='subl --wait'
 fi
 if [[ -z "$VISUAL" ]]; then
-  export VISUAL='nano'
+  export VISUAL='subl --wait'
 fi
 if [[ -z "$PAGER" ]]; then
   export PAGER='less'
