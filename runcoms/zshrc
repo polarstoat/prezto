@@ -16,7 +16,3 @@ alias tmsu="sudo sysctl debug.lowpri_throttle_enabled=0"
 alias tmsd="sudo sysctl debug.lowpri_throttle_enabled=1"
 
 SPACESHIP_EXIT_CODE_SHOW=true
-
-# Enable iTerm 2 shell integration
-# See https://iterm2.com/documentation-shell-integration.html
-source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/iterm2_shell_integration.zsh"

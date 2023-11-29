@@ -38,6 +38,7 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'git' \
   'utility' \
+  'iterm2-shell-integration' \
   'completion' \
   'history-substring-search' \
   'contrib-prompt' \

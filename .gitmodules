@@ -29,3 +29,6 @@
 	path = modules/prompt/external/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 	shallow = true
+[submodule "modules/iterm2-shell-integration/external"]
+	path = modules/iterm2-shell-integration/external
+	url = https://github.com/gnachman/iTerm2-shell-integration.git
