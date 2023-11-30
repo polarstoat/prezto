@@ -52,7 +52,6 @@ typeset -gU cdpath fpath mailpath path
 # Use ~/.local/bin instead of ~/bin for user binaries/executables as per the
 # systemd file-hierarchy spec ( https://www.freedesktop.org/software/systemd/man/latest/file-hierarchy.html#~/.local/bin/ )
 path=(
-  $N_PREFIX/bin(N)
   $HOME/.local/{,s}bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
