@@ -79,3 +79,7 @@ fi
 if [[ -z "$LESSOPEN" ]] && (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
+
+# Prevent creation of ~/.lesshst less history file
+# See https://stackoverflow.com/a/66097963
+export LESSHISTFILE=-
