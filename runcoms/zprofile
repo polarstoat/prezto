@@ -100,3 +100,6 @@ export LESSHISTFILE=-
 # installs from Homebrew, so safer to use the standard ~/.local
 # https://github.com/tj/n#optional-environment-variables
 export N_PREFIX=$HOME/.local
+
+# Specify npmrc config file outside of $HOME folder
+export NPM_CONFIG_USERCONFIG="$HOME"/.config/npm/npmrc
