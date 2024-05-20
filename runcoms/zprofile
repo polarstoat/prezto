@@ -91,3 +91,12 @@ fi
 # Prevent creation of ~/.lesshst less history file
 # See https://stackoverflow.com/a/66097963
 export LESSHISTFILE=-
+
+#
+# Other
+#
+
+# The default install location of n ( /usr/local ) could cause conflicts with
+# installs from Homebrew, so safer to use the standard ~/.local
+# https://github.com/tj/n#optional-environment-variables
+export N_PREFIX=$HOME/.local

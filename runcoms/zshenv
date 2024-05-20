@@ -9,8 +9,3 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
-
-# The default install location of n ( /usr/local ) could cause conflicts with
-# installs from Homebrew, so safer to use the standard ~/.local
-# https://github.com/tj/n#optional-environment-variables
-export N_PREFIX=$HOME/.local
