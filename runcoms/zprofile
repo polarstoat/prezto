@@ -101,5 +101,10 @@ export LESSHISTFILE=-
 # https://github.com/tj/n#optional-environment-variables
 export N_PREFIX=$HOME/.local
 
+# Don't change the installed versions of `npm`, `npx`, and `corepack`
+# See https://github.com/tj/n?tab=readme-ov-file#preserving-npm
+export N_PRESERVE_NPM=1
+export N_PRESERVE_COREPACK=1
+
 # Specify npmrc config file outside of $HOME folder
 export NPM_CONFIG_USERCONFIG="$HOME"/.config/npm/npmrc
