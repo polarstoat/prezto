@@ -39,8 +39,8 @@ fi
 # Homebrew
 #
 
-# Output of `/opt/homebrew/bin/brew shellenv`, PATH commented out as
-# we're adding Homebrew to the path ourselves below
+# Output of `/opt/homebrew/bin/brew shellenv`
+# PATH commented out as we're adding Homebrew to the path ourselves below
 export HOMEBREW_PREFIX="/opt/homebrew";
 export HOMEBREW_CELLAR="/opt/homebrew/Cellar";
 export HOMEBREW_REPOSITORY="/opt/homebrew";
