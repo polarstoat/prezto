@@ -49,6 +49,16 @@ export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
 export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 
 #
+# PNPM
+#
+
+# For some reason "$HOME/Library/pnpm" is used on macOS, rather than the
+# $XDG_DATA_HOME default of "$HOME/.local/share/pnpm" so this changes that
+export PNPM_HOME="$HOME/.local/share/pnpm"
+
+# Also, add the PNPM home bin file to the path as below
+
+#
 # Paths
 #
 
@@ -67,6 +77,7 @@ typeset -gU cdpath fpath mailpath path
 path=(
   $HOME/.local/{,s}bin(N)
   $HOMEBREW_PREFIX/{,s}bin(N)
+  $PNPM_HOME/bin(N)
   /usr/local/{,s}bin(N)
   $path
 )
@@ -95,16 +106,3 @@ export LESSHISTFILE=-
 #
 # Other
 #
-
-# The default install location of n ( /usr/local ) could cause conflicts with
-# installs from Homebrew, so safer to use the standard ~/.local
-# https://github.com/tj/n#optional-environment-variables
-export N_PREFIX=$HOME/.local
-
-# Don't change the installed versions of `npm`, `npx`, and `corepack`
-# See https://github.com/tj/n?tab=readme-ov-file#preserving-npm
-export N_PRESERVE_NPM=1
-export N_PRESERVE_COREPACK=1
-
-# Specify npmrc config file outside of $HOME folder
-export NPM_CONFIG_USERCONFIG="$HOME"/.config/npm/npmrc
